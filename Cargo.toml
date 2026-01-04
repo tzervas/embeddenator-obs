@@ -1,6 +1,6 @@
 [package]
 name = "embeddenator-obs"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 authors = ["Tyler Zervas <tz-dev@vectorweight.com>"]
 description = "Observability: metrics, logging, and tracing for Embeddenator"
@@ -11,11 +11,14 @@ categories = ["development-tools::profiling", "development-tools::debugging"]
 
 [features]
 default = []
-tracing = ["dep:tracing", "dep:tracing-subscriber"]
+logging = ["dep:tracing", "dep:tracing-subscriber"]
+full-observability = ["logging"]
 
 [dependencies]
 tracing = { version = "0.1", optional = true }
 tracing-subscriber = { version = "0.3", optional = true, features = ["env-filter", "fmt"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 
 [dev-dependencies]
 proptest = "1.0"
