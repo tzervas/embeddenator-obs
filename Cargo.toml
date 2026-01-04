@@ -6,22 +6,16 @@ authors = ["Tyler Zervas <tz-dev@vectorweight.com>"]
 description = "Observability: metrics, logging, and tracing for Embeddenator"
 license = "MIT"
 repository = "https://github.com/tzervas/embeddenator-obs"
-keywords = ["embeddenator", "vsa", "holographic", "sparse-ternary"]
-categories = ["algorithms", "data-structures", "memory-management"]
+keywords = ["embeddenator", "observability", "metrics", "logging"]
+categories = ["development-tools::profiling", "development-tools::debugging"]
 
 [features]
 default = []
-simd = []
-block-sparse = []
+tracing = ["dep:tracing", "dep:tracing-subscriber"]
 
 [dependencies]
-# Component dependencies will be minimal
-# Add specific deps as needed per component
+tracing = { version = "0.1", optional = true }
+tracing-subscriber = { version = "0.3", optional = true, features = ["env-filter", "fmt"] }
 
 [dev-dependencies]
 proptest = "1.0"
-criterion = "0.5"
-
-[[bench]]
-name = "component_bench"
-harness = false
