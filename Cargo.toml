@@ -12,6 +12,8 @@ categories = ["development-tools::profiling", "development-tools::debugging"]
 [features]
 default = []
 tracing = ["dep:tracing", "dep:tracing-subscriber"]
+logging = ["dep:tracing", "dep:tracing-subscriber"]
+metrics = []
 
 [dependencies]
 tracing = { version = "0.1", optional = true }

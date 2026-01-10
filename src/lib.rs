@@ -9,8 +9,13 @@ pub use obs::*;
 
 #[cfg(test)]
 mod tests {
+    use super::*;
+
     #[test]
     fn component_loads() {
-        assert!(true);
+        // Verify core types are accessible
+        let metrics = Metrics::new();
+        let snapshot = metrics.snapshot();
+        assert_eq!(snapshot.poison_recoveries_total, 0);
     }
 }

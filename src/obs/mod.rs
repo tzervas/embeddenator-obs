@@ -1,7 +1,7 @@
-pub mod metrics;
-pub mod logging;
 pub mod hires_timing;
+pub mod logging;
+pub mod metrics;
 
-pub use metrics::*;
-pub use logging::*;
 pub use hires_timing::*;
+pub use logging::*;
+pub use metrics::*;
