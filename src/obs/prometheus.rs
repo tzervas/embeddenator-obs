@@ -197,7 +197,7 @@ fn sanitize_name(name: &str) -> String {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::obs::telemetry::{OperationStats, Telemetry};
+    use crate::obs::telemetry::Telemetry;
 
     #[test]
     fn test_prometheus_export() {

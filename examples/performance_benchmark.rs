@@ -1,7 +1,7 @@
 //! Performance overhead benchmarks for observability components
 
 use embeddenator_obs::{create_span, measure_n, metrics, HiResTimer, TestMetrics};
-use std::time::{Duration, Instant};
+use std::time::Instant;
 
 fn main() {
     println!("=== Embeddenator Observability Performance Benchmarks ===\n");

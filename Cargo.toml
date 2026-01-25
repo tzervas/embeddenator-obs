@@ -6,6 +6,7 @@ authors = ["Tyler Zervas <tz-dev@vectorweight.com>"]
 description = "Observability: metrics, logging, and tracing for Embeddenator"
 license = "MIT"
 repository = "https://github.com/tzervas/embeddenator-obs"
+documentation = "https://docs.rs/embeddenator-obs"
 keywords = ["embeddenator", "observability", "metrics", "logging"]
 categories = ["development-tools::profiling", "development-tools::debugging"]
 

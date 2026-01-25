@@ -1,8 +1,6 @@
 //! Integration tests for observability components
 
-use embeddenator_obs::{
-    create_span, init_tracing, metrics, Telemetry, TelemetryConfig, TestMetrics,
-};
+use embeddenator_obs::{create_span, init_tracing, metrics, Telemetry, TestMetrics};
 use std::time::Duration;
 
 #[test]
