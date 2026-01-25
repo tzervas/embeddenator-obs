@@ -137,6 +137,7 @@ fn test_combined_observability() {
 }
 
 #[test]
+#[cfg(feature = "telemetry")]
 fn test_telemetry_json_export() {
     let mut telemetry = Telemetry::default_config();
 
