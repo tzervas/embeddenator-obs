@@ -220,7 +220,7 @@ mod tests {
 
     #[test]
     fn test_span_creation() {
-        let _span = create_span("test_op", &[("key", "value")]);
+        create_span("test_op", &[("key", "value")]);
         // Should compile and not panic
     }
 

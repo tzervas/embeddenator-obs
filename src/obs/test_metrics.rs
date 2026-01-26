@@ -423,9 +423,11 @@ mod tests {
 
     #[test]
     fn test_throughput_calculation() {
-        let mut stats = TimingStats::default();
-        stats.count = 1000;
-        stats.total_ns = 1_000_000_000; // 1 second
+        let stats = TimingStats {
+            count: 1000,
+            total_ns: 1_000_000_000, // 1 second
+            ..Default::default()
+        };
 
         assert_eq!(stats.ops_per_sec(), 1000.0);
     }

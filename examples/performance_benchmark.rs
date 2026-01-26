@@ -56,8 +56,8 @@ fn benchmark_tracing_overhead() {
     // Span creation
     let start = Instant::now();
     for _ in 0..iterations {
-        let _span = create_span("test", &[]);
-        std::hint::black_box(&_span);
+        create_span("test", &[]);
+        std::hint::black_box(&());
     }
     let span_ns = start.elapsed().as_nanos() / iterations;
 

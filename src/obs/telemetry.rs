@@ -423,7 +423,7 @@ mod tests {
 
         // Test percentiles
         let p50 = stats.percentile(50.0);
-        assert!(p50 >= 250 && p50 <= 350); // Median should be ~300
+        assert!((250..=350).contains(&p50)); // Median should be ~300
 
         let p95 = stats.p95_us();
         assert!(p95 >= 400); // P95 should be high

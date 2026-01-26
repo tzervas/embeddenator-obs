@@ -92,7 +92,8 @@ mod tests {
 
     #[test]
     fn component_loads() {
-        assert!(true);
+        // Verify module loads successfully
+        let _ = metrics();
     }
 
     #[test]
