@@ -107,4 +107,12 @@ mod tests {
     fn test_init_tracing_no_panic() {
         init_tracing();
     }
+
+    #[test]
+    fn test_metrics_new() {
+        // Verify core types are accessible
+        let metrics = Metrics::new();
+        let snapshot = metrics.snapshot();
+        assert_eq!(snapshot.poison_recoveries_total, 0);
+    }
 }
