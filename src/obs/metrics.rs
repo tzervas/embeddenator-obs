@@ -289,10 +289,10 @@ mod tests {
 
         #[cfg(feature = "metrics")]
         {
-            assert!(after.poison_inodes >= before.poison_inodes + 1);
-            assert!(after.poison_recoveries_total >= before.poison_recoveries_total + 1);
-            assert!(after.sub_cache_hits >= before.sub_cache_hits + 1);
-            assert!(after.retrieval_query_calls >= before.retrieval_query_calls + 1);
+            assert!(after.poison_inodes > before.poison_inodes);
+            assert!(after.poison_recoveries_total > before.poison_recoveries_total);
+            assert!(after.sub_cache_hits > before.sub_cache_hits);
+            assert!(after.retrieval_query_calls > before.retrieval_query_calls);
             assert!(after.retrieval_query_ns_total >= before.retrieval_query_ns_total);
             assert!(after.retrieval_query_ns_max >= before.retrieval_query_ns_max);
         }
