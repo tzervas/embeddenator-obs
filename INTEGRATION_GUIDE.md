@@ -454,10 +454,10 @@ fn performance_baseline() {
 
 | Operation | Target Overhead | Actual (Release) |
 |-----------|----------------|------------------|
-| Counter increment | <20ns | 4ns ✅ |
-| Span creation | <200ns | 6ns ✅ |
-| TestMetrics timing | <100ns | 24ns ✅ |
-| Hi-res measurement | <100ns | 20ns ✅ |
+| Counter increment | <20ns | 4ns  |
+| Span creation | <200ns | 6ns  |
+| TestMetrics timing | <100ns | 24ns  |
+| Hi-res measurement | <100ns | 20ns  |
 
 ## Additional Resources
 

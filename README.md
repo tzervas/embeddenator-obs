@@ -19,7 +19,7 @@ Comprehensive observability infrastructure for the Embeddenator ecosystem.
 
 ## Status
 
-**Phase 2A Component Extraction** - Fully migrated from embeddenator core.
+**** - Fully migrated from embeddenator core.
 
 **Implementation**: Core features complete, optional integrations available.
 
@@ -44,10 +44,10 @@ Comprehensive observability infrastructure for the Embeddenator ecosystem.
 
 ```toml
 [dependencies]
-embeddenator-obs = { git = "https://github.com/tzervas/embeddenator-obs", tag = "v0.20.0-alpha.1" }
+embeddenator-obs = { git = "https://github.com/tzervas/embeddenator-obs", tag = "0.21.0" }
 
 # Or with all features
-embeddenator-obs = { git = "https://github.com/tzervas/embeddenator-obs", tag = "v0.20.0-alpha.1", features = ["full"] }
+embeddenator-obs = { git = "https://github.com/tzervas/embeddenator-obs", tag = "0.21.0", features = ["full"] }
 ```
 
 ## Usage
